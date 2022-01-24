@@ -24,10 +24,11 @@ def checkout():
         }
     listaRegistros.clear()
     listaRegistros.append(nuevoRegistro)
-    print(request.form)
+    totalFrutas= int(request.form["strawberry"]) + int(request.form["raspberry"]) + int(request.form["apple"])
+    print(f"Cobrando a {nuevoRegistro['first_name']} por {totalFrutas} frutas")
     return redirect ('/checkout')
 
-@app.route('/fruits')         
+@app.route('/fruits')
 def fruits():
     return render_template("fruits.html")
 
