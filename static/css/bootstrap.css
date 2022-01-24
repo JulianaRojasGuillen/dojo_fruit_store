@@ -4,6 +4,21 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+ .fruits_container{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 30px;
+}
+.mini_container{
+  width:150px;
+}
+.fruit{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
